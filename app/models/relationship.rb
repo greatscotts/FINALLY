@@ -16,13 +16,11 @@ class Relationship < ActiveRecord::Base
 
   def disallow_self_referential_relationship
    if followed_id == follower_id
-     errors[:base] << 'You cannot follow yourself!'
    end
   end
 
   def ensure_followed_user_exists
     if followed_id.nil?
-      errors[:base] << 'User to follow does not exist!'
     end
   end
 end
