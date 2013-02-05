@@ -4,7 +4,7 @@ class Micropost < ActiveRecord::Base
   belongs_to :user
   belongs_to :in_reply_to, :class_name=> 'User', :foreign_key=> 'in_reply_to'
 
-  IN_REPLY_TO_REGEX = /^@\w+/
+  IN_REPLY_TO_REGEX = /^@?\w+/
 
   validates :content, :presence=> true, :length=> { :maximum=> 140 }
   validates :user_id, :presence=> true
@@ -22,7 +22,6 @@ class Micropost < ActiveRecord::Base
   def user_cannot_reply_to_self
     if is_reply_to?
       if in_reply_to == user
-        errors[:base] << "You cannot reply to yourself!"
       end
     end
   end
@@ -42,6 +41,8 @@ class Micropost < ActiveRecord::Base
       return name
     end
   end
+
+
 
   # return an SQL condition to include:
   # All posts by the user

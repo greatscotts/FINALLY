@@ -1,4 +1,5 @@
 class MicropostsController < ApplicationController
+  #include MicropostsHelper
   before_filter :signed_in_user, :only=> [:destroy]
   before_filter :current_user, :only=> :destroy
 

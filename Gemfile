@@ -32,7 +32,7 @@ gem 'jquery-rails', '2.0.2'
 # To use debugger (ruby-debug for Ruby 1.8.7+, ruby-debug19 for Ruby 1.9.2+)
 # gem 'ruby-debug'
 # gem 'ruby-debug19'
-
+gem 'pg', '0.12.2'
 # Bundle the extra gems:
 # gem 'bj'
 # gem 'nokogiri'

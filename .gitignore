@@ -6,3 +6,6 @@ tmp/
 *.*~
 *~
 *.swp
+public/assets/uploads/*.jpg
+public/assets/uploads/*.jpeg
+public/assets/uploads/*.png
