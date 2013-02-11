@@ -98,12 +98,22 @@ background-repeat: repeat;
 }
 
 #alignment {
+  margin-left: -850px;
+  margin-top: 20px;
+  margin-right: 500px;
+  padding-top: 10px;
+  position: relative;
+  font-size: 1.3em;
+  }
+
+  #alignmentss {
   margin-left: -300px;
   margin-top: 70px;
   margin-right: 500px;
   padding-top: 10px;
   position: relative;
   font-size: 1.3em;
+  display:none;
   }
 #alignments {
   font-family: "Segoe UI";
@@ -154,7 +164,7 @@ p {
   padding-top: 7px;
   font-weight: bold;
   line-height: 1;
-  margin-top: -1px;
+  margin-top: -7px;
   &:hover {
     opacity: 0.8;
     text-decoration: none;
@@ -179,7 +189,7 @@ g{
 /* footer */
 
 footer {
-  margin-top: 170px;
+  margin-top: 440px;
   border-top: 1px solid $grayMediumLight;
   color: $grayLight;
  position: relative;
@@ -347,7 +357,7 @@ font-family: "Airstream NF";
 }
 color1{
 font-family: "Segoe UI";
-color: #ffffff;
+color: #f000000;
 color1:link { 
   color: #ffffff;
 }}
@@ -507,7 +517,7 @@ yu{
 
 #profilepicture{
   max-width: 300px;
-  max-height: 530px;
+  max-height: 300px;
 }
 
 #feedpicture{  
@@ -517,4 +527,8 @@ yu{
 
 #hide{
   display:none;
+}
+
+#page{
+  float: right;
 }
