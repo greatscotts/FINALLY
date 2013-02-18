@@ -169,7 +169,6 @@ p {
 }
 #text{
   color: white;
-  font-family: "Segoe UI";
 
   &:hover {
     opacity: 0.8;
@@ -178,9 +177,10 @@ p {
 }
 g{
   color: white;
-  font-family: "Segoe UI";
   }
-
+#aup{
+  margin-top: -2px;
+}
 
 
 /* footer */

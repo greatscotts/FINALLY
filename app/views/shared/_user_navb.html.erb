@@ -1,3 +1,6 @@
+
 <a href="<%= user_path(current_user) %>">
-	  <g><%= image_tag avatan_url current_user, :size=> 25 %>   <%= current_user.username%></g>
+	<div class="row" id="aup">
+	 <g><%= image_tag avatan_url current_user%> <%=current_user.username%></g>
+	</div>
 	</a>

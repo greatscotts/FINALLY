@@ -7,10 +7,8 @@
       <%= link_to image_tag("icon.png", :id=> "logo"), root_path  %>
     <ul class="nav pull-right menu">
 
-      <li><%= render 'shared/user_navb'%></li>
+      <li><%= render 'shared/user_navb'%>
       <li><%= link_to "Home", root_path, :id=> "text" %></li>
-      
-     
         <li><%= link_to "Users", users_path, :id=> "text" %></li>
         <li id="msg-menu" class="dropdown">
           <a href="#" class = "dropdown-toggle" data-toggle="dropdown" style="color: #ffffff;background-color: #1F73D1">
