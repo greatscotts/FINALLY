@@ -3,13 +3,12 @@
   <aside class="span4">
   <section>
   <h1>
-    <center><%= link_to image_tag @user.image, :size => "300x300", :id=>"profilepicture" %></center>
+    <center><%= image_tag avatar_url current_user, :size=> 200 %></center>
   </br>
     <center><%= @user.name %></center>
   </h1>
 <center><%= @user.status %></center>
-<center><%= @user.location %></center>
-<center><%= @user.school %></center>
+<center><%= @user.course %></center>
   </section>
   <section>
   <%= render 'shared/stats' %>

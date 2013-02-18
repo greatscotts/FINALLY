@@ -1,10 +1,8 @@
 <% provide(:title, 'Welcome to Kiiido.ph') %>
 
 <body class="wraparound">
- 
- <home><%= link_to image_tag("http://i48.tinypic.com/k3876g.png"), root_path  %></home>
  <div id="alignments"> 
-  <div id="image"><a href="#"/> <img src="http://i49.tinypic.com/nb52d4.png" class="grayscale"/></a></div>    
+  <div id="image"><a href="#"/> <img src="http://i46.tinypic.com/15nngxx.jpg" class="grayscale"/></a></div>    
  
 </br>
 </br>
@@ -17,27 +15,35 @@
 </br>
 </br>
 </br>
-<center><color1>Social network just for teens</color1></center>
-</br>
-</br>
-<center>March 1, 2013</center>
 </div>
-
-
-<div class="row">
-  <div id="alignment">
-  <div id="video"><iframe width="480" height="360" src="http://www.youtube.com/embed/V0iVtnwxTjM" frameborder="0" allowfullscreen></iframe></div>
+<div id="alignment">
+ <h1>Sign in</h1>
+  
 <div class="rows">
+  <div class="span4 offset3">
+    <%= form_for(:session, :url=> sessions_path) do |f| %>
 
- 
+      <%= f.label :username%>
+      <%= f.text_field :username %>
 
+      <%= f.label :password %>
+      <%= f.password_field :password %>
 
+     <alignleft> <%= f.submit "Sign in", :class=> "btn btn-large btn-primary" %>
+    <% end %>
+      
+ </div>
   </div>
 </br>
-
 </br>
-
-</br> 
-
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+    <center><p>Join Us &nbsp<color1><%= link_to "Sign up now!", signup_path %></color1></p>
     </div>
     </body>
+

@@ -97,23 +97,20 @@ background-repeat: repeat;
   background-size: 250px;
 }
 
-#alignment {
-  margin-left: -850px;
-  margin-top: 20px;
-  margin-right: 500px;
-  padding-top: 10px;
-  position: relative;
-  font-size: 1.3em;
-  }
+#new {
+  background-image: 
+  url(http://i49.tinypic.com/34xj6f5.png);
+  background-repeat: repeat-x;
+  background-size: 200px;
+}
 
-  #alignmentss {
+#alignment {
   margin-left: -300px;
   margin-top: 70px;
   margin-right: 500px;
   padding-top: 10px;
   position: relative;
   font-size: 1.3em;
-  display:none;
   }
 #alignments {
   font-family: "Segoe UI";
@@ -164,7 +161,7 @@ p {
   padding-top: 7px;
   font-weight: bold;
   line-height: 1;
-  margin-top: -7px;
+  margin-top: -1px;
   &:hover {
     opacity: 0.8;
     text-decoration: none;
@@ -189,7 +186,7 @@ g{
 /* footer */
 
 footer {
-  margin-top: 440px;
+  margin-top: 170px;
   border-top: 1px solid $grayMediumLight;
   color: $grayLight;
  position: relative;
@@ -357,7 +354,7 @@ font-family: "Airstream NF";
 }
 color1{
 font-family: "Segoe UI";
-color: #f000000;
+color: #ffffff;
 color1:link { 
   color: #ffffff;
 }}
@@ -517,7 +514,7 @@ yu{
 
 #profilepicture{
   max-width: 300px;
-  max-height: 300px;
+  max-height: 530px;
 }
 
 #feedpicture{  
@@ -527,8 +524,4 @@ yu{
 
 #hide{
   display:none;
-}
-
-#page{
-  float: right;
 }

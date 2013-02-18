@@ -99,7 +99,7 @@ ActiveRecord::Schema.define(:version => 20130203172930) do
   create_table "users", :force => true do |t|
     t.string   "name"
     t.string   "email"
-    t.string   "school"
+    t.string   "course"
     t.string   "location"
     t.string   "status"
     t.datetime "created_at"
