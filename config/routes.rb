@@ -6,7 +6,7 @@ SampleApp::Application.routes.draw do
     end
   end
 
-  resources :sessions, :only=> [:new, :create, :destroy]
+  resources :sessions, :only=> [:new, :create, :destroy, :create_mobile]
   resources :microposts, :only=> [:destroy]
   resources :relationships, :only=> [:create, :destroy]
   resources :parser, :only=> [:create]
@@ -15,8 +15,11 @@ SampleApp::Application.routes.draw do
   match '/signup',  :to=> 'users#new'
   match '/profile',  :to=> 'users#show'
   match '/signin',  :to=> 'sessions#new'
+  match '/enter',  :to=> 'sessions#create_mobile'
   match '/signout', :to=> 'sessions#destroy', :via=> :delete
 
+  match '/home', :to=> 'static_pages#home_mobile'
+  match '/login', :to=> 'static_pages#home_mobile'
   match '/contact', :to=> 'static_pages#contact'
   match '/about', :to=> 'static_pages#about'
   match '/help',  :to=> 'static_pages#help'

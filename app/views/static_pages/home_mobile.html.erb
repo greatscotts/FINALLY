@@ -1,0 +1,10 @@
+<% if signed_in? %>
+  <div class="row">
+    <div class="span8">
+      <h3><k>What's happening?</k></h3>
+      <%= render 'shared/feed_mobile' %>
+    </div>
+  </div>
+<% else %>
+  <%= render "shared/home_mobile" %>
+<% end %>
