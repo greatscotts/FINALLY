@@ -1,0 +1,15 @@
+<% if signed_in? %>
+<LINK REL="SHORTCUT ICON" HREF="http://www.kiido.ph/favicon.ico">
+  <body id="max">
+  <div class="row mgin mgn">
+    <aside class="span4">
+      <section>
+        <!--%= render 'shared/micropost_form' %-->
+        <%= render 'shared/post_form' %>
+      </section>
+    </aside>
+  </div>
+</body>
+<% else %>
+  <%= render "shared/home_mobile" %>
+<% end %>

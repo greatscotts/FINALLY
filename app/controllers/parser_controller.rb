@@ -6,7 +6,7 @@ class ParserController < ApplicationController
     invoker = CommandInvoker.new(current_user)
     invoker.command = params[:command]
     if invoker.execute
-      redirect_to root_path
+      redirect_to  :back
     else
       @feed_items = []
       if invoker.errors.empty?
