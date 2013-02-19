@@ -18,6 +18,8 @@ SampleApp::Application.routes.draw do
   match '/enter',  :to=> 'sessions#create_mobile'
   match '/signout', :to=> 'sessions#destroy', :via=> :delete
 
+  match '/posts', :to=> 'sessions#create_post'
+
   match '/post', :to=> 'static_pages#home_post'
   match '/home', :to=> 'static_pages#home_mobile'
   match '/login', :to=> 'static_pages#home_mobile'

@@ -11,5 +11,36 @@
   </div>
 </body>
 <% else %>
-  <%= render "shared/home_mobile" %>
+  <body id="max">
+<div class="rows mgin">
+<div class="span4 offset3">
+    <em><b>Sign in</b></em>
+  </br>
+</br>
+</br>
+</br>
+    <%= form_for(:sessionss, :url=> '/posts') do |f| %>
+
+      <%= f.label :username%>
+      <%= f.text_field :username %>
+
+      <%= f.label :password %>
+      <%= f.password_field :password %>
+
+     <alignleft> <%= f.submit "Sign in", :class=> "btn btn-large btn-primary" %>
+    <% end %>
+      </br>
+    </br>
+  </br>
+    <p>Join Us! <color1><%= link_to "Sign up now!", signup_path %></color1></p>
+ </div>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br></div>
+</body>
 <% end %>
