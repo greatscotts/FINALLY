@@ -32,7 +32,7 @@ gem 'jquery-rails', '2.0.2'
 # To use debugger (ruby-debug for Ruby 1.8.7+, ruby-debug19 for Ruby 1.9.2+)
 # gem 'ruby-debug'
 # gem 'ruby-debug19'
-gem 'pg', '0.12.2'
+
 # Bundle the extra gems:
 # gem 'bj'
 # gem 'nokogiri'
@@ -45,12 +45,8 @@ gem 'carrierwave'
 #   gem 'webrat'
 # end
 
-group :development, :test do
-  gem 'sqlite3', '1.3.5'
-  gem "rspec-rails", ">= 2.0.1"
-  gem 'capybara'
-gem 'factory_girl_rails', '~> 1.1'
-  gem 'database_cleaner'
+group :development do
+gem 'sqlite3'
 end
 
 group :test do
@@ -58,7 +54,6 @@ group :test do
 end
 
 group :production do
-  gem 'pg', '0.12.2'
-
-
+  
+  gem 'mysql2'
 end

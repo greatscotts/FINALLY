@@ -1,0 +1,17 @@
+---
+applications:
+  .: 
+    name: scotties    
+    framework:
+      name: rails3
+      info:
+        mem: 256M
+        description: Rails Application
+        exec: 
+    infra: ap-aws
+    url: scotties.ap01.aws.af.cm
+    mem: 2G
+    instances: 1
+    services:
+      scottiejj-mysql-79919:
+        type: mysql

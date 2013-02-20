@@ -12,16 +12,6 @@
 
 ActiveRecord::Schema.define(:version => 20130203172930) do
 
-  create_table "mentions", :force => true do |t|
-    t.integer  "mention_user_id"
-    t.integer  "micropost_id"
-    t.datetime "created_at",      :null => false
-    t.datetime "updated_at",      :null => false
-  end
-
-  add_index "mentions", ["mention_user_id", "micropost_id"], :name => "index_mentions_on_mention_user_id_and_micropost_id", :unique => true
-  add_index "mentions", ["micropost_id"], :name => "index_mentions_on_micropost_id"
-
   create_table "messages", :force => true do |t|
     t.integer  "from_user_id"
     t.integer  "to_user_id"
