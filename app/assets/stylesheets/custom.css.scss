@@ -143,6 +143,14 @@ h1 {
   text-align: center;
 }
 
+sze {
+  line-height: 1;
+  font-size: 3em;
+  letter-spacing: -2px;
+  margin-bottom: 30px;
+  text-align: left;
+} 
+
 h2 {
   font-size: 1.7em;
   letter-spacing: -1px;
@@ -1646,4 +1654,12 @@ padding-top: 165px;
   }
 }
 
+}
+
+algnleft{
+  float: left;
+}
+
+h12{
+  font-size: 1.5em;
 }

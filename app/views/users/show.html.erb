@@ -2,14 +2,13 @@
 <div class="row">
   <aside class="span4">
   <section>
+  <h12><h1>Hi i'm <%= @user.name %></h1></h12>
   <h1>
     <center><%= link_to image_tag @user.image, :size => "300x300", :id=>"profilepicture" %></center>
-  </br>
-    <center><%= @user.name %></center>
   </h1>
-  <center>@<%= @user.username %></center>
-<center><%= @user.status %></center>
-<center><%= @user.course %></center>
+  <algnleft>Username: <a>@<%= @user.username %></a></algnleft></br>
+<algnleft>Status: <a><%= @user.status %></a></algnleft></br>
+<algnleft>Course: <a><%= @user.course %></a></algnleft>
   </section>
   <section>
   <%= render 'shared/stats' %>

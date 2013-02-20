@@ -4,7 +4,7 @@ class CreateUsers < ActiveRecord::Migration
       t.string :name
       t.string :email
       t.string :course
-      t.string :location
+      t.string :school
       t.string :status
 
       t.timestamps

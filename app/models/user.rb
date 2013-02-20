@@ -1,7 +1,7 @@
 class User < ActiveRecord::Base
   # note :admin is excluded, so malicatious user cannot send a PUT
   # requset to make arbitraty users admins.
-  attr_accessible :name, :username, :email, :password, :password_confirmation, :course, :location, :status, :image, :remote_image_url
+  attr_accessible :name, :username, :email, :password, :password_confirmation, :course, :school, :status, :image, :remote_image_url
   has_secure_password
 
   default_scope :order=> :username

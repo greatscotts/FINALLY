@@ -90,7 +90,7 @@ ActiveRecord::Schema.define(:version => 20130203172930) do
     t.string   "name"
     t.string   "email"
     t.string   "course"
-    t.string   "location"
+    t.string   "school"
     t.string   "status"
     t.datetime "created_at"
     t.datetime "updated_at"

@@ -1,6 +1,6 @@
 ---
 applications:
-  .: 
+  .:
     name: scotties    
     framework:
       name: rails3
@@ -13,5 +13,5 @@ applications:
     mem: 2G
     instances: 1
     services:
-      scottiejj-mysql-79919:
+      kiido-mysql-79919:
         type: mysql

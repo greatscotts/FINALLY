@@ -19,13 +19,13 @@ SampleApp::Application.routes.draw do
   match '/signout', :to=> 'sessions#destroy', :via=> :delete
 
   match '/posts', :to=> 'sessions#create_post'
-
   match '/post', :to=> 'static_pages#home_post'
   match '/home', :to=> 'static_pages#home_mobile'
   match '/login', :to=> 'static_pages#home_mobile'
   match '/contact', :to=> 'static_pages#contact'
   match '/about', :to=> 'static_pages#about'
   match '/help',  :to=> 'static_pages#help'
+  match '/sis',  :to=> 'static_pages#sis'
 
   root      :to=> 'static_pages#home'
 
