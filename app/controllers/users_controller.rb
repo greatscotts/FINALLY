@@ -26,7 +26,7 @@ class UsersController < ApplicationController
     @user = User.new(params[:user])
     if @user.save
       sign_in @user
-      flash[:success] = "Welcome to the Kiido.ph!"
+      flash[:success] = "Welcome to the Kiido.ph! To change your Profile Picture go to Settings in Account Tab."
 
       redirect_to users_url
     else
@@ -36,6 +36,12 @@ class UsersController < ApplicationController
 
   def edit
   end
+
+def edits
+   render 'edits'
+  end
+
+  
 
   def update
     if @user.update_attributes(params[:user])

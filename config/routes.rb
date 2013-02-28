@@ -27,6 +27,9 @@ SampleApp::Application.routes.draw do
   match '/help',  :to=> 'static_pages#help'
   match '/sis',  :to=> 'static_pages#sis'
 
+ 
+
+
   root      :to=> 'static_pages#home'
 
   # The priority is based upon order of creation:

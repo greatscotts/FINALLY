@@ -1,4 +1,4 @@
-source 'http://rubygems.org'
+ source 'http://rubygems.org'
 
 gem 'rails', '3.2.11'
 gem 'will_paginate'
@@ -6,6 +6,9 @@ gem 'bootstrap-sass', '2.1'
 gem 'bcrypt-ruby'
 gem 'faker'
 gem 'bootstrap-will_paginate'
+
+#gem 'filepicker-rails'
+
 
 # Asset pipeline stuff for 3.2.5+
 group :assets do
